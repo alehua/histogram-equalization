@@ -17,8 +17,10 @@ k5=ndimage.convolve(img,kernel_5*5)
 blurred=cv2.GaussianBlur(img,(11,11),0)
 g_hpf=img-blurred
 
-cv2.imshow("3*3",k3)
-cv2.imshow("5*5",k5)
-cv2.imshow("g_hpf",g_hpf)
-cv2.waitKey()
-cv2.destroyAllWindows()
+array1=np.shape(g_hpf)
+array1
+# cv2.imshow("3*3",k3)
+# cv2.imshow("5*5",k5)
+# cv2.imshow("g_hpf",g_hpf)
+# cv2.waitKey()
+# cv2.destroyAllWindows()
